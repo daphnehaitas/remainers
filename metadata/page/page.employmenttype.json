@@ -1,0 +1,34 @@
+{
+  "_id": "page.employmenttype",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.employmenttype--radios.employmenttype",
+      "_type": "radios",
+      "hint": "Select the latest type of contract the person leaving MOJ had",
+      "items": [
+        {
+          "_id": "page.employmenttype--radios.employmenttype--radio.PermanentRole",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.employmenttype--radios.employmenttype--radio.PermanentRole--text.woooo",
+            "_type": "text",
+            "label": "My permanaent conditional question",
+            "name": "woooo"
+          },
+          "label": "Permanent",
+          "value": "Permanent role"
+        },
+        {
+          "_id": "page.employmenttype--radios.employmenttype--radio.ContractRole",
+          "_type": "radio",
+          "label": "Contract",
+          "value": "Contract role"
+        }
+      ],
+      "legend": "What type of employment did the leaver have?",
+      "name": "employmenttype"
+    }
+  ],
+  "url": "employmenttype"
+}

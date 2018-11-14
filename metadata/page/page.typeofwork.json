@@ -1,0 +1,28 @@
+{
+  "_id": "page.typeofwork",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.typeofwork--text.Name",
+      "_type": "text",
+      "hint": "Insert the full name of the person leaving MOJ",
+      "label": "What is the leaver's name?",
+      "name": "Name"
+    },
+    {
+      "_id": "page.typeofwork--email.emailAddress",
+      "_type": "email",
+      "hint": "Insert the work email address",
+      "label": "What is the email address of person leaving?",
+      "name": "emailAddress"
+    },
+    {
+      "_id": "page.typeofwork--text.Jobtitle",
+      "_type": "text",
+      "label": "What is job title of the person leaving MOJ?",
+      "name": "Jobtitle"
+    }
+  ],
+  "heading": "Leavers details",
+  "url": "personal_details"
+}
