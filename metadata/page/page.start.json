@@ -1,12 +1,23 @@
 {
   "_id": "page.start",
   "_type": "page.start",
-  "body": "The information in this form will help the Department of Professionals to .... It is essential to fill this form out at least **three days** before you leave.",
+  "body": "Please, inform your manager **at least 4 weeks in  advance** before leaving the Ministry of Justice to allow time for a timely handover.",
+  "components": [
+    {
+      "_id": "page.start--warning",
+      "_type": "warning",
+      "html": "It is important that this form is filled in at least 3 days before the contractor or permanent employee leaves the Ministry of Justice."
+    }
+  ],
   "heading": "MOJ Leavers form",
-  "lede": "Please, complete this form, before you leave MOJ",
+  "lede": "This form is important to ensure that our inventory is kept up-to-date. It needs to be completed before a contractor or permanent employee leaves the Ministry of Justice.",
   "steps": [
     "page.typeofwork",
-    "page.employmenttype"
+    "page.employmenttype",
+    "page.Dateofleaving",
+    "page.moreinfo",
+    "page.technologyused",
+    "page.answers"
   ],
   "url": "/"
 }

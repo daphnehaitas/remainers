@@ -1,0 +1,22 @@
+{
+  "_id": "page.technologyused",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.technologyused--text.technologyused",
+      "_type": "text",
+      "label": "Item",
+      "name": "technologyused",
+      "repeatable": true,
+      "repeatableAdd": "Please insert another tool or technology you got from MOJ",
+      "repeatableHeading": "Please list all technologies you have had at MOJ",
+      "repeatableLede": "Please insert below all technologies you have used and still own at MOJ. These will need to be promptly returned to the IT department.",
+      "repeatableMaximum": 10,
+      "show": true,
+      "validation": {
+        "required": true
+      }
+    }
+  ],
+  "url": "technologyused"
+}

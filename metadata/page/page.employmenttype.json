@@ -5,30 +5,57 @@
     {
       "_id": "page.employmenttype--radios.employmenttype",
       "_type": "radios",
+      "disabled": {
+        "identifier": "employmenttype",
+        "operator": "is",
+        "value": "Other"
+      },
       "hint": "Select the latest type of contract the person leaving MOJ had",
       "items": [
         {
-          "_id": "page.employmenttype--radios.employmenttype--radio.PermanentRole",
+          "_id": "page.employmenttype--radios.employmenttype--radio.permanent",
           "_type": "radio",
           "conditionalComponent": {
-            "_id": "page.employmenttype--radios.employmenttype--radio.PermanentRole--text.woooo",
-            "_type": "text",
-            "label": "My permanaent conditional question",
-            "name": "woooo"
+            "_id": "page.employmenttype--radios.employmenttype--radio.permanent--date.datestarted",
+            "_type": "date",
+            "label": "When was your first day at MOJ?",
+            "name": "datestarted"
           },
           "label": "Permanent",
-          "value": "Permanent role"
+          "value": "permanent"
         },
         {
-          "_id": "page.employmenttype--radios.employmenttype--radio.ContractRole",
+          "_id": "page.employmenttype--radios.employmenttype--radio.contract",
           "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.employmenttype--radios.employmenttype--radio.contract--number.idcard",
+            "_type": "number",
+            "errors": {
+              "minimum": {
+                "summary": "you silly!"
+              }
+            },
+            "hint": "Please insert at least the 6 digit number",
+            "label": "What is your ID number?",
+            "name": "idcard",
+            "validation": {
+              "minimum": 111111
+            }
+          },
           "label": "Contract",
-          "value": "Contract role"
+          "value": "contract"
+        },
+        {
+          "_id": "page.employmenttype--radios.employmenttype--radio.Other",
+          "_type": "radio",
+          "label": "Other",
+          "value": "Other"
         }
       ],
       "legend": "What type of employment did the leaver have?",
       "name": "employmenttype"
     }
   ],
+  "show": true,
   "url": "employmenttype"
 }

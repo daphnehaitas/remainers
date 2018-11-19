@@ -13,14 +13,19 @@
       "_id": "page.typeofwork--email.emailAddress",
       "_type": "email",
       "hint": "Insert the work email address",
-      "label": "What is the email address of person leaving?",
-      "name": "emailAddress"
+      "label": "What is the email address of the person leaving?",
+      "name": "emailAddress",
+      "widthClassInput": "one-half"
     },
     {
       "_id": "page.typeofwork--text.Jobtitle",
       "_type": "text",
       "label": "What is job title of the person leaving MOJ?",
-      "name": "Jobtitle"
+      "name": "Jobtitle",
+      "show": true,
+      "validation": {
+        "required": false
+      }
     }
   ],
   "heading": "Leavers details",

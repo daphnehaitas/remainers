@@ -1,0 +1,19 @@
+{
+  "_id": "page.Dateofleaving",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.Dateofleaving--date.date",
+      "_type": "date",
+      "label": "What is your last day at MOJ?",
+      "name": "date"
+    }
+  ],
+  "show": {
+    "identifier": "employmenttype",
+    "negated": true,
+    "operator": "is",
+    "value": "Other"
+  },
+  "url": "Dateofleaving"
+}
